@@ -13,9 +13,7 @@ INFO:     Started server process [12035]
 ```
 
 Notes:
-- TODO
-- TODO
-- TODO
+This was my first solo run after class, so I took my time and followed the runbook step‑by‑step. Everything went smoothly — no errors at all — although the installer ran for several minutes and printed a lot of pip output, which made me wonder at first if it had frozen. I learned that running `account_lookup 100001` returns Alice Johnson’s account with a balance of 5000.00, and seeing `echo $?` return 0 confirms the COBOL program executed successfully.
 
 ## Run 2 — i-06aef3f6d3b08c30e (2026-11-01)
 
@@ -25,9 +23,7 @@ INFO:     Started server process [12327]
 ```
 
 Notes:
-- TODO
-- TODO
-- TODO
+For this run, I launched two instances from my template at the same time, which is why Runs 2 and 3 show identical boot timestamps. I noticed my terminal prompt switched to root instead of ec2-user, meaning I had elevated myself to the root account even though the assignment requires staying under ec2-user. This time I also understood that running `source venv/bin/activate` is what adds (venv) to the prompt, and that Uvicorn won’t start unless the virtual environment is activated first.
 
 ## Run 3 — i-080c1288140029da3 (2026-11-01)
 
@@ -37,9 +33,7 @@ INFO:     Started server process [35681]
 ```
 
 Notes:
-- TODO
-- TODO
-- TODO
+This run went quicker because the second instance was already up, so I didn’t have to wait for it to finish booting. Everything worked without errors, and I realized that running the instance‑ID command before starting Uvicorn is a reliable way to confirm which server I’m actually on — the ID printed in the terminal matches the one shown at the bottom of the EC2 console. I also now understand that using `--host 0.0.0.0` allows the API to accept external connections, not just requests coming from inside the instance itself.
 
 ## Run 4 — i-TODO (date TODO)
 

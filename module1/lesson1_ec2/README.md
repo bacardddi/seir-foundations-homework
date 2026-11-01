@@ -1,9 +1,9 @@
-# Module 1 / Lesson 1 — EC2 + Balerica Legacy Bank
+﻿# Module 1 / Lesson 1 â€” EC2 + Balerica Legacy Bank
 
 **Student:** Bakari Woods
 **Time zone:** America/New_York
 
-## Lab run evidence (Steps 0–4, seven fresh instances)
+## Lab run evidence (Steps 0â€“4, seven fresh instances)
 
 | Run | Date (local) | Time zone | Instance ID | Boot time (UTC) | Public IPv4 DNS | Screenshot | Terminated? |
 |-----|--------------|-----------|-------------|-----------------|-----------------|------------|-------------|
@@ -20,9 +20,9 @@
 | Item | File | Done? |
 |------|------|-------|
 | Personal notes | `lab1_notes.md` | No |
-| Maarek Section 21 quiz | `screenshots/Maarek_Section21_quiz.jpg` | No |
-| Maarek Section 23 quiz | `screenshots/Maarek_Section23_quiz.jpg` | No |
-| Maarek Section 25 quiz | `screenshots/Maarek_Section25_quiz.jpg` | No |
+| Maarek Section 21 quiz | `screenshots/Maarek_Section21_quiz.jpg` | Yes |
+| Maarek Section 23 quiz | `screenshots/Maarek_Section23_quiz.jpg` | Yes |
+| Maarek Section 25 quiz | `screenshots/Maarek_Section25_quiz.jpg` | Yes |
 | AI runbook review | `ai_review_BakariWoods.txt` | No |
 | Spotter check-in | `spotter_BakariWoods.txt` | No |
 | COBOL rc 0 | `screenshots/cobol_rc0.jpg` | No |

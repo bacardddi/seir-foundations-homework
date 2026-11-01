@@ -1,9 +1,9 @@
-﻿# Module 1 / Lesson 1 â€” EC2 + Balerica Legacy Bank
+﻿# Module 1 / Lesson 1 — EC2 + Balerica Legacy Bank
 
 **Student:** Bakari Woods
 **Time zone:** America/New_York
 
-## Lab run evidence (Steps 0â€“4, seven fresh instances)
+## Lab run evidence (Steps 0–4, seven fresh instances)
 
 | Run | Date (local) | Time zone | Instance ID | Boot time (UTC) | Public IPv4 DNS | Screenshot | Terminated? |
 |-----|--------------|-----------|-------------|-----------------|-----------------|------------|-------------|

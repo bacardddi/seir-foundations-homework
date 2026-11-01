@@ -1,0 +1,26 @@
+AI used = TODO
+Conversation share link = TODO (or "see ai_review_transcript_BakariWoods")
+
+Q1: TODO
+AI's answer, in my own words:
+How I checked it (ran a command, re-read the runbook, asked my spotter, etc.):
+
+Q2: TODO
+AI's answer, in my own words:
+How I checked it:
+
+Q3: TODO
+AI's answer, in my own words:
+How I checked it:
+
+Q4: TODO
+AI's answer, in my own words:
+How I checked it:
+
+Q5: TODO
+AI's answer, in my own words:
+How I checked it:
+
+Where the AI was wrong, vague, or out of date:
+(at least one example, and how you found out)
+TODO

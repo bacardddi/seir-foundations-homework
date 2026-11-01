@@ -1,0 +1,15 @@
+Spotter = Ben Tucker
+5 things my spotter learned while working on the lab / homework:
+1. TODO
+2. TODO
+3. TODO
+4. TODO
+5. TODO
+
+I am the spotter for = TODO
+5 things I learned that I shared with them:
+1. TODO
+2. TODO
+3. TODO
+4. TODO
+5. TODO

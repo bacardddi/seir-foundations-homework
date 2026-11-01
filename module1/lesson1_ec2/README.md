@@ -1,0 +1,42 @@
+# Module 1 / Lesson 1 — EC2 + Balerica Legacy Bank
+
+**Student:** Bakari Woods
+**Time zone:** America/New_York
+
+## Lab run evidence (Steps 0–4, seven fresh instances)
+
+| Run | Date (local) | Time zone | Instance ID | Boot time (UTC) | Public IPv4 DNS | Screenshot | Terminated? |
+|-----|--------------|-----------|-------------|-----------------|-----------------|------------|-------------|
+| 1 | 2026-11-01 | America/New_York | i-0dc9309767bd71db5 | 2026-11-01 21:00:12 | ec2-100-27-200-135.compute-1.amazonaws.com | `screenshots/lab1_run1.jpg` | TODO |
+| 2 | 2026-11-01 | America/New_York | i-06aef3f6d3b08c30e | 2026-11-01 21:22:14 | ec2-52-87-175-234.compute-1.amazonaws.com | `screenshots/lab1_run2.jpg` | TODO |
+| 3 | 2026-11-01 | America/New_York | i-080c1288140029da3 | 2026-11-01 21:22:14 | ec2-54-81-94-77.compute-1.amazonaws.com | `screenshots/lab1_run3.jpg` | TODO |
+| 4 | | America/New_York | | | | `screenshots/lab1_run4.jpg` | |
+| 5 | | America/New_York | | | | `screenshots/lab1_run5.jpg` | |
+| 6 | | America/New_York | | | | `screenshots/lab1_run6.jpg` | |
+| 7 | | America/New_York | | | | `screenshots/lab1_run7.jpg` | |
+
+## Required deliverables
+
+| Item | File | Done? |
+|------|------|-------|
+| Personal notes | `lab1_notes.md` | No |
+| Maarek Section 21 quiz | `screenshots/Maarek_Section21_quiz.jpg` | No |
+| Maarek Section 23 quiz | `screenshots/Maarek_Section23_quiz.jpg` | No |
+| Maarek Section 25 quiz | `screenshots/Maarek_Section25_quiz.jpg` | No |
+| AI runbook review | `ai_review_BakariWoods.txt` | No |
+| Spotter check-in | `spotter_BakariWoods.txt` | No |
+| COBOL rc 0 | `screenshots/cobol_rc0.jpg` | No |
+| COBOL rc 4 | `screenshots/cobol_rc4.jpg` | No |
+| COBOL rc 8 | `screenshots/cobol_rc8.jpg` | No |
+| COBOL rc 12 | `screenshots/cobol_rc12.jpg` | No |
+| Ledger decode | `screenshots/cobol_ledger_decode.jpg` | No |
+| Clone own repo on EC2 | `screenshots/git_clone.jpg` | No |
+| AI-enabled study | `AI_enabled_study_lab1.0.txt` | No |
+
+## Extra credit evidence
+
+| Item | Requirement | Screenshot | Done? |
+|------|-------------|------------|-------|
+| BAM_2.1 | `/ask` answered by Bedrock (not `offline-knowledge-base`) | `screenshots/BAM_2.1.jpg` | No |
+| BAM_2.2 | Baked launch template; cloud-init log + COBOL lookup with no manual install | `screenshots/BAM_2.2.jpg` | No |
+| BAM_2.3 | Golden AMI; uvicorn starts on AMI instance with no installer | `screenshots/BAM_2.3.jpg` | No |

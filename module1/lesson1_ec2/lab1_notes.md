@@ -60,7 +60,7 @@ INFO:     Started server process [12025]
 ```
 
 Notes:
-- TODO
+For this run, I launched two instances from my template at the same time, which is why Runs 5 and 6 share the exact same boot timestamp (06:04:23 UTC, about 1:04 AM Eastern). Since I’d already completed four runs, I was able to type most of the commands from memory and only glanced at the runbook a couple of times. Everything executed without errors, but I noticed that the installer upgrades pip from 21.3.1 to 26.0.1 every single run. That happens because each instance starts out completely clean, with nothing preinstalled. Seeing that helped me understand why the assignment requires brand‑new instances each time — every run demonstrates that I can rebuild the entire bank system from scratch.
 
 ## Run 6 — i-0577b13eec0179ee4 (2026-11-02)
 
@@ -70,7 +70,7 @@ INFO:     Started server process [12263]
 ```
 
 Notes:
-- TODO
+This was my final run for Monday, so I made sure it served as the third and last lab‑run screenshot dated Nov 2, keeping me under the daily limit of three. I had already installed everything on the second instance while Run 5 was finishing, so I jumped straight to Step 4. Again, there were no errors, but my prompt still showed root instead of ec2-user, which I need to fix before Run 7. I also learned that each “Started server process” number (this time 12263) is a unique process ID, which proves that every run is a separate server instance.
 
 ## Run 7 — i-TODO (date TODO)
 

@@ -1,9 +1,22 @@
 AI used = Claude
 Conversation share link = https://claude.ai/share/eb697576-49ef-4d0b-a606-72bfa63314c6
 
-Q1: TODO
-AI's answer, in my own words:
-How I checked it (ran a command, re-read the runbook, asked my spotter, etc.):
+Q1: Why did my terminal show root instead of ec2-user when I ran whoami?
+    Is it bad to work as root?
+AI's answer, in my own words: I most likely switched to root with a command
+    like sudo su or sudo -i, which turns the whole session into the admin
+    account until I leave it. A prompt ending in # means root and $ means a
+    normal user. Working as root is a bad habit because root can delete
+    anything with no warning, and files I create as root end up in /root
+    and belong to root, which can cause "Permission denied" later. The fix
+    is to type exit and only put sudo in front of single commands that
+    need it.
+How I checked it: I compared my screenshots. All my lab runs end in # with
+    [root@...], but my BAM_1.1 screenshot from last week (SSH from my own
+    PC) ends in $ and whoami printed ec2-user. I re-read Step 0 of the
+    runbook, which expects whoami = ec2-user and pwd = /home/ec2-user.
+    TODO (run 7): type exit and run whoami again; run echo $HOME as root and
+    as ec2-user; run history | grep sudo to see if sudo su / sudo -i is there.
 
 Q2: TODO
 AI's answer, in my own words:
@@ -17,10 +30,29 @@ Q4: TODO
 AI's answer, in my own words:
 How I checked it:
 
-Q5: TODO
-AI's answer, in my own words:
-How I checked it:
+Q5: What does --host 0.0.0.0 --port 8000 mean in the uvicorn command?
+AI's answer, in my own words: 0.0.0.0 means the server listens on every
+    network address the instance has, and 8000 is the port. That does not
+    mean anyone can get in: the security group decides who from outside is
+    allowed. Both the server and the security group have to allow it for
+    my browser to reach /docs. The AI corrected my wording, because I had
+    said 0.0.0.0 means "accept anyone."
+How I checked it: Every one of my lab-run screenshots shows "Uvicorn running
+    on http://0.0.0.0:8000". I re-read the runbook, which says to open port
+    8000 in the security group with source "My IP" to reach /docs.
+
+Q6: In the Balerica bank, are rejected payments saved to payments.dat?
+AI's answer, in my own words: Yes. Both POSTED and REJECTED payments are
+    written to the journal. The only time nothing is saved is return code
+    12, when the program can't even start (for example, it can't open
+    accounts.dat). When I asked if real banks do the same, it said real
+    banks also keep rejected payments for audits, fraud checks and customer
+    disputes, but usually store them separately from approved payments.
+How I checked it: On Run 4 I ran cat data/payments.dat and saw TXN-BW-0001
+    and TXN-BW-0002 both marked REJECTED, so rejected payments are saved.
+    Then I ran account_lookup 100001 and Alice's balance was still 5000.00,
+    so a rejected payment is logged but never moves money. This matched
+    the AI's answer.
 
 Where the AI was wrong, vague, or out of date:
-(at least one example, and how you found out)
-TODO
+TODO (after run 7 history check)

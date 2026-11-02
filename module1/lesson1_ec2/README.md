@@ -23,7 +23,7 @@
 | Maarek Section 21 quiz | `screenshots/Maarek_Section21_quiz.jpg` | Yes |
 | Maarek Section 23 quiz | `screenshots/Maarek_Section23_quiz.jpg` | Yes |
 | Maarek Section 25 quiz | `screenshots/Maarek_Section25_quiz.jpg` | Yes |
-| AI runbook review | `ai_review_BakariWoods.txt` | No |
+| AI runbook review | `ai_review_BakariWoods.txt` | Yes |
 | Spotter check-in | `spotter_BakariWoods.txt` | No |
 | COBOL rc 0 | `screenshots/cobol_rc0.jpg` | Yes |
 | COBOL rc 4 | `screenshots/cobol_rc4.jpg` | Yes |

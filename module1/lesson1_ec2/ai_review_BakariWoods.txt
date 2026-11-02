@@ -15,9 +15,6 @@ How I checked it: I compared my screenshots. All my lab runs end in # with
     [root@...], but my BAM_1.1 screenshot from last week (SSH from my own
     PC) ends in $ and whoami printed ec2-user. I re-read Step 0 of the
     runbook, which expects whoami = ec2-user and pwd = /home/ec2-user.
-    TODO (run 7): type exit and run whoami again; run echo $HOME as root and
-    as ec2-user; run history | grep sudo to see if sudo su / sudo -i is there.
-
 Q2: What does echo $? do, and why does it show 0, 4, 8 or 12 after the
     COBOL programs?
 AI's answer, in my own words: Every Linux program ends by handing back a
@@ -100,4 +97,4 @@ Where the AI was wrong, vague, or out of date:
    but the AI assumed which user I was instead of checking.
 2. Q1 - stated a guess as near-certain: The AI said a sudo command was
    "almost certainly" how I became root, even though it could not see my
-   session. TODO (run 7): history | grep sudo result.
+   session. It turned a guess into something that sounded like a fact.

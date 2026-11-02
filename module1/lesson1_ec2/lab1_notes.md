@@ -35,11 +35,11 @@ INFO:     Started server process [35681]
 Notes:
 This run went quicker because the second instance was already up, so I didn’t have to wait for it to finish booting. Everything worked without errors, and I realized that running the instance‑ID command before starting Uvicorn is a reliable way to confirm which server I’m actually on — the ID printed in the terminal matches the one shown at the bottom of the EC2 console. I also now understand that using `--host 0.0.0.0` allows the API to accept external connections, not just requests coming from inside the instance itself.
 
-## Run 4 — i-TODO (date TODO)
+## Run 4 — i-07a13735074905900 (2026-11-02)
 
 Exact output line from this run:
 ```
-TODO
+INFO:     Started server process [54804]
 ```
 
 Notes:
@@ -79,7 +79,7 @@ Notes:
 
 ## COBOL practice
 
-Run used: Run TODO — Instance ID i-TODO
+Run used: Run 4 — Instance ID i-07a13735074905900
 
 ### Accounts (`cat data/accounts.dat`)
 Number of accounts: TODO

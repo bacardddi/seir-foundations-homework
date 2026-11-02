@@ -10,7 +10,7 @@
 | 1 | 2026-11-01 | America/New_York | i-0dc9309767bd71db5 | 2026-11-01 21:00:12 | ec2-100-27-200-135.compute-1.amazonaws.com | `screenshots/lab1_run1.jpg` | TODO |
 | 2 | 2026-11-01 | America/New_York | i-06aef3f6d3b08c30e | 2026-11-01 21:22:14 | ec2-52-87-175-234.compute-1.amazonaws.com | `screenshots/lab1_run2.jpg` | TODO |
 | 3 | 2026-11-01 | America/New_York | i-080c1288140029da3 | 2026-11-01 21:22:14 | ec2-54-81-94-77.compute-1.amazonaws.com | `screenshots/lab1_run3.jpg` | TODO |
-| 4 | | America/New_York | | | | `screenshots/lab1_run4.jpg` | |
+| 4 | 2026-11-02 | America/New_York | i-07a13735074905900 | 2026-11-01 23:08:13 | ec2-32-200-119-88.compute-1.amazonaws.com | `screenshots/lab1_run4.jpg` | TODO |
 | 5 | | America/New_York | | | | `screenshots/lab1_run5.jpg` | |
 | 6 | | America/New_York | | | | `screenshots/lab1_run6.jpg` | |
 | 7 | | America/New_York | | | | `screenshots/lab1_run7.jpg` | |

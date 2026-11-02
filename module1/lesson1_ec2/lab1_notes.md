@@ -89,8 +89,8 @@ Notes:
 Run used: Run 4 — Instance ID i-07a13735074905900
 
 ### Accounts (`cat data/accounts.dat`)
-Number of accounts: TODO
-Account IDs: TODO
+Number of accounts: 3
+Account IDs: 100001 (Alice Johnson), 100002 (Robert Smith), 100003 (Maria Garcia) — all ACTIVE, all USD
 
 ### Return code 0 — success
 Command: `./cobol/bin/account_lookup 100001`
@@ -156,7 +156,7 @@ $ echo $?
 Meaning: 12 = environment failure. I ran it from the wrong folder, so the program could not find `data/accounts.dat` (it uses a relative path). FILE-STATUS 35 is COBOL's "file not found" code.
 
 ### Bonus — payment to a non-ACTIVE account
-TODO
+All three accounts in `data/accounts.dat` were ACTIVE, so there was no inactive account to test.
 
 ### Decoding Alice's balance by hand
 Raw 12 characters (columns 45–56): `000000500000`
@@ -190,38 +190,13 @@ My best guess why:
 - **The same transaction ID appeared twice:** In a real banking system, duplicate TXN IDs would normally be blocked to prevent confusion or accidental double‑processing.
 
 ### Optional — SQLite tables
-TODO
+Not attempted (optional).
 
 ---
 
 ## BAM (extra credit)
 
-### BAM_2.1 — Bedrock
-Instance ID: TODO
-IAM role name: TODO
-Inference profile ID: TODO
-Question asked + full response:
-```
-TODO
-```
-
-### BAM_2.2 — Baked launch template
-Instance ID: TODO
-Launch template ID + version: TODO
-Final User Data script:
-```bash
-TODO
-```
-What I had to fix: TODO
-Why User Data runs as root by default: TODO
-
-### BAM_2.3 — Golden AMI
-AMI ID: TODO
-Snapshot ID: TODO
-Built from instance: TODO
-Launched from AMI: TODO
-Were my earlier test payments still in `data/payments.dat`? Why? TODO
-Launch template vs AMI — when to use each: TODO
+Not attempted this week (optional).
 
 ---
 

@@ -43,7 +43,14 @@ INFO:     Started server process [54804]
 ```
 
 Notes:
-- TODO
+This run was a little different because I started the instance on Sunday night and kept it running past midnight, so the screenshot ended up dated Monday, Nov 2. The boot time still shows Nov 1, which is fine since the requirement only says the boot time must be within 24 hours of the screenshot. Uvicorn started without any issues, but I discovered that my first ledger screenshot didn’t count because it came from an instance that wasn’t listed in my run table. I also learned that I need to run the instance‑ID command before every screenshot, not just the one before launching Uvicorn.
+
+This time the COBOL return codes made a lot more sense to me:
+
+- **0** — the program ran successfully
+- **4** — the account number doesn’t exist
+- **8** — a bank rule blocked the payment
+- **12** — the program couldn’t locate its data file because I executed it from the wrong directory, which produced `FILE-STATUS=35`
 
 ## Run 5 — i-TODO (date TODO)
 

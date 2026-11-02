@@ -176,7 +176,11 @@ BALANCE=5000.00
 CURRENCY=USD
 ```
 Did account 100001's balance change after my payments? No — it is still 5000.00.
-My best guess why: TODO
+My best guess why:
+
+- **Both transactions failed:** One attempt was for $0, and the other exceeded Alice’s available balance. Since rejected transactions never actually transfer funds, her account balance didn’t change.
+- **Every attempt still gets logged:** Even when a payment is denied, the program records it in the journal. This ensures the bank has a complete history of all activity, which is essential for proper auditing.
+- **The same transaction ID appeared twice:** In a real banking system, duplicate TXN IDs would normally be blocked to prevent confusion or accidental double‑processing.
 
 ### Optional — SQLite tables
 TODO

@@ -1,5 +1,5 @@
-AI used = TODO
-Conversation share link = TODO (or "see ai_review_transcript_BakariWoods")
+AI used = Claude
+Conversation share link = https://claude.ai/share/eb697576-49ef-4d0b-a606-72bfa63314c6
 
 Q1: TODO
 AI's answer, in my own words:

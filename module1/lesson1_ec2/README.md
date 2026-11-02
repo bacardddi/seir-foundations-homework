@@ -1,4 +1,4 @@
-﻿# Module 1 / Lesson 1 — EC2 + Balerica Legacy Bank
+# Module 1 / Lesson 1 — EC2 + Balerica Legacy Bank
 
 **Student:** Bakari Woods
 **Time zone:** America/New_York
@@ -7,12 +7,12 @@
 
 | Run | Date (local) | Time zone | Instance ID | Boot time (UTC) | Public IPv4 DNS | Screenshot | Terminated? |
 |-----|--------------|-----------|-------------|-----------------|-----------------|------------|-------------|
-| 1 | 2026-11-01 | America/New_York | i-0dc9309767bd71db5 | 2026-11-01 21:00:12 | ec2-100-27-200-135.compute-1.amazonaws.com | `screenshots/lab1_run1.jpg` | TODO |
-| 2 | 2026-11-01 | America/New_York | i-06aef3f6d3b08c30e | 2026-11-01 21:22:14 | ec2-52-87-175-234.compute-1.amazonaws.com | `screenshots/lab1_run2.jpg` | TODO |
-| 3 | 2026-11-01 | America/New_York | i-080c1288140029da3 | 2026-11-01 21:22:14 | ec2-54-81-94-77.compute-1.amazonaws.com | `screenshots/lab1_run3.jpg` | TODO |
-| 4 | 2026-11-02 | America/New_York | i-07a13735074905900 | 2026-11-01 23:08:13 | ec2-32-200-119-88.compute-1.amazonaws.com | `screenshots/lab1_run4.jpg` | TODO |
-| 5 | 2026-11-02 | America/New_York | i-0a90d322749389b41 | 2026-11-02 06:04:23 | ec2-3-80-195-226.compute-1.amazonaws.com | `screenshots/lab1_run5.jpg` | TODO |
-| 6 | 2026-11-02 | America/New_York | i-0577b13eec0179ee4 | 2026-11-02 06:04:23 | ec2-54-226-137-36.compute-1.amazonaws.com | `screenshots/lab1_run6.jpg` | TODO |
+| 1 | 2026-11-01 | America/New_York | i-0dc9309767bd71db5 | 2026-11-01 21:00:12 | ec2-100-27-200-135.compute-1.amazonaws.com | `screenshots/lab1_run1.jpg` | Yes |
+| 2 | 2026-11-01 | America/New_York | i-06aef3f6d3b08c30e | 2026-11-01 21:22:14 | ec2-52-87-175-234.compute-1.amazonaws.com | `screenshots/lab1_run2.jpg` | Yes |
+| 3 | 2026-11-01 | America/New_York | i-080c1288140029da3 | 2026-11-01 21:22:14 | ec2-54-81-94-77.compute-1.amazonaws.com | `screenshots/lab1_run3.jpg` | Yes |
+| 4 | 2026-11-02 | America/New_York | i-07a13735074905900 | 2026-11-01 23:08:13 | ec2-32-200-119-88.compute-1.amazonaws.com | `screenshots/lab1_run4.jpg` | Yes |
+| 5 | 2026-11-02 | America/New_York | i-0a90d322749389b41 | 2026-11-02 06:04:23 | ec2-3-80-195-226.compute-1.amazonaws.com | `screenshots/lab1_run5.jpg` | Yes |
+| 6 | 2026-11-02 | America/New_York | i-0577b13eec0179ee4 | 2026-11-02 06:04:23 | ec2-54-226-137-36.compute-1.amazonaws.com | `screenshots/lab1_run6.jpg` | Yes |
 | 7 | | America/New_York | | | | `screenshots/lab1_run7.jpg` | |
 
 ## Required deliverables

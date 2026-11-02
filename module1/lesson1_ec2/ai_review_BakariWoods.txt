@@ -18,17 +18,53 @@ How I checked it: I compared my screenshots. All my lab runs end in # with
     TODO (run 7): type exit and run whoami again; run echo $HOME as root and
     as ec2-user; run history | grep sudo to see if sudo su / sudo -i is there.
 
-Q2: TODO
-AI's answer, in my own words:
-How I checked it:
+Q2: What does echo $? do, and why does it show 0, 4, 8 or 12 after the
+    COBOL programs?
+AI's answer, in my own words: Every Linux program ends by handing back a
+    hidden number called an exit code, and $? holds the exit code of the
+    last command, so echo $? prints it. It only remembers the very last
+    command, so you have to check it right away. 0 means success, and the
+    4 / 8 / 12 scale comes from mainframe tradition: higher number, bigger
+    problem. 4 = warning (account not found), 8 = the business rules said
+    no, 12 = the setup is broken. FastAPI reads this number to decide
+    whether to answer "approved", "rejected", or "server error".
+How I checked it: I compared my four COBOL screenshots from Run 4.
+    account_lookup 100001 gave 0, account_lookup 999999 gave 4 with
+    ERROR=ACCOUNT NOT FOUND, both my $0 and 99999999.00 payments gave 8
+    with STATUS=REJECTED, and running from the wrong folder gave 12 with
+    CANNOT OPEN. Every code matched the AI's table and the homework table.
 
-Q3: TODO
-AI's answer, in my own words:
-How I checked it:
+Q3: When I ran account_lookup from my home folder I got
+    ERROR=CANNOT OPEN data/accounts.dat and FILE-STATUS=35. Why did that
+    happen?
+AI's answer, in my own words: The program opens data/accounts.dat with a
+    relative path (no / at the start), so it looks for a data folder inside
+    whatever folder I'm currently in. From /opt/balerica-bank the file
+    exists, but from my home folder it doesn't. FILE-STATUS=35 is COBOL's
+    code for "file not found," and the exit code would be 12. The fix is to
+    cd /opt/balerica-bank first, and use pwd if I'm unsure where I am.
+How I checked it: My cobol_rc12 screenshot shows that from ~ the command
+    failed with CANNOT OPEN, FILE-STATUS=35 and echo $? = 12. Then I ran
+    cd /opt/balerica-bank and the same lookup worked in my other
+    screenshots with return code 0. Changing only the folder changed the
+    result, which proved the folder was the cause.
 
-Q4: TODO
-AI's answer, in my own words:
-How I checked it:
+Q4: What does source venv/bin/activate do, and why do I need it before
+    running uvicorn?
+AI's answer, in my own words: The installer created a private Python
+    environment in /opt/balerica-bank/venv with FastAPI and uvicorn inside.
+    Linux finds commands by searching the folders in PATH, and venv/bin is
+    normally not on that list, so uvicorn would be "command not found."
+    activate puts venv/bin at the front of PATH, and (venv) shows in the
+    prompt. It has to be run with source so the change stays in my current
+    terminal, and it has to be done again in every new terminal.
+How I checked it: In all my lab-run screenshots, (venv) appears at the
+    front of the prompt right after source venv/bin/activate, and uvicorn
+    starts after that. My Run 5 screenshot shows the installer using
+    /opt/balerica-bank/venv/bin/python3 and installing pip into
+    /opt/balerica-bank/venv/lib/python3.9/site-packages, which proves the
+    packages live inside the venv folder. Step 4 of the runbook also runs
+    activate right before uvicorn.
 
 Q5: What does --host 0.0.0.0 --port 8000 mean in the uvicorn command?
 AI's answer, in my own words: 0.0.0.0 means the server listens on every
@@ -55,4 +91,13 @@ How I checked it: On Run 4 I ran cat data/payments.dat and saw TXN-BW-0001
     the AI's answer.
 
 Where the AI was wrong, vague, or out of date:
-TODO (after run 7 history check)
+1. Q3 - wrong assumption: The AI said that from my home folder the program
+   looked for /home/ec2-user/data/accounts.dat. But I was logged in as
+   root, not ec2-user, so my home folder was /root and the program actually
+   looked for /root/data/accounts.dat. I found this by looking at my
+   cobol_rc12 screenshot, where the prompt is [root@ip-172-31-28-188 ~]#.
+   The overall explanation (relative path, wrong folder) was still right,
+   but the AI assumed which user I was instead of checking.
+2. Q1 - stated a guess as near-certain: The AI said a sudo command was
+   "almost certainly" how I became root, even though it could not see my
+   session. TODO (run 7): history | grep sudo result.

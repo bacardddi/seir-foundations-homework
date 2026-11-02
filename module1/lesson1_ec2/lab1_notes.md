@@ -232,4 +232,8 @@ Launch template vs AMI — when to use each: TODO
 4. **Using the same transaction IDs twice** — I reused TXN‑BW‑0001 and TXN‑BW‑0002, so they show up twice in `payments.dat`. Real banks don’t allow duplicate transaction IDs because it can cause mistakes, so I should have used TXN‑BW‑0003 and higher for the second attempts.
 
 ## Commands I now know by heart
-- TODO
+- `sudo dnf install -y git` — this installs Git on a brand‑new Amazon Linux server so I can use it right away.
+- `git clone https://github.com/BalericaAI/SEIR-Foundations.git` — this downloads the whole course repo onto my instance, including all the folders and files I need.
+- `bash SEIR-Foundations/module1/lesson1_ec2/API/install/install.sh` — this runs the installer script that sets up the bank system, installs everything, and gets the COBOL programs ready.
+- `cat data/accounts.dat` / `cat data/payments.dat` — these commands show me the ledger and the payments journal so I can see the account balances and every payment attempt.
+- `cut -c45-56 data/accounts.dat` — this pulls out just the balance column by using the exact character positions in the file.

@@ -162,9 +162,20 @@ Why there is no decimal point in the file:
 
 ### My journal lines (`cat data/payments.dat`)
 ```
-TODO
+TXN-BW-0001         1000010000000000000USDREJECTEDTEST-ZERO
+TXN-BW-0002         1000010099999999900USDREJECTEDTEST-BIG
+TXN-BW-0001         1000010000000000000USDREJECTEDTEST-ZERO
+TXN-BW-0002         1000010099999999900USDREJECTEDTEST-BIG
 ```
-Did account 100001's balance change after my payments? TODO
+Lookup of 100001 afterwards:
+```
+ACCOUNT=100001
+NAME=Alice Johnson
+STATUS=ACTIVE
+BALANCE=5000.00
+CURRENCY=USD
+```
+Did account 100001's balance change after my payments? No — it is still 5000.00.
 My best guess why: TODO
 
 ### Optional — SQLite tables

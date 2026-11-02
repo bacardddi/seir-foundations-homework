@@ -226,9 +226,10 @@ Launch template vs AMI — when to use each: TODO
 ---
 
 ## Mistakes I made
-1. TODO
-2. TODO
-3. TODO
+1. **Working as root instead of ec2‑user** — My prompt showed root and `whoami` also said root in some screenshots, but the assignment needs the ID line to show ec2‑user. I learned I should always check my prompt before I start, and type `exit` if I accidentally end up in a root shell.
+2. **Taking a ledger screenshot on the wrong instance** — My first ledger screenshot came from an instance that wasn’t in my run table, and I had already used my three allowed runs for Nov 1. I fixed it by keeping the instance running past midnight so it counted as Run 4 on Nov 2, then I retook the screenshot correctly.
+3. **Forgetting the ID line on my return‑code screenshots** — My first COBOL return‑code screenshots (rc0, rc4, rc8, rc12) didn’t include the required ID line: `whoami`, `date`, `ec2-metadata -i`, and `uptime -s`. I redid them the right way, and now I run the ID line before every screenshot so I don’t miss it again.
+4. **Using the same transaction IDs twice** — I reused TXN‑BW‑0001 and TXN‑BW‑0002, so they show up twice in `payments.dat`. Real banks don’t allow duplicate transaction IDs because it can cause mistakes, so I should have used TXN‑BW‑0003 and higher for the second attempts.
 
 ## Commands I now know by heart
 - TODO

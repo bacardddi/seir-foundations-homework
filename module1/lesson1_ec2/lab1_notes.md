@@ -52,21 +52,21 @@ This time the COBOL return codes made a lot more sense to me:
 - **8** — a bank rule blocked the payment
 - **12** — the program couldn’t locate its data file because I executed it from the wrong directory, which produced `FILE-STATUS=35`
 
-## Run 5 — i-TODO (date TODO)
+## Run 5 — i-0a90d322749389b41 (2026-11-02)
 
 Exact output line from this run:
 ```
-TODO
+INFO:     Started server process [12025]
 ```
 
 Notes:
 - TODO
 
-## Run 6 — i-TODO (date TODO)
+## Run 6 — i-0577b13eec0179ee4 (2026-11-02)
 
 Exact output line from this run:
 ```
-TODO
+INFO:     Started server process [12263]
 ```
 
 Notes:

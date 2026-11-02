@@ -11,8 +11,8 @@
 | 2 | 2026-11-01 | America/New_York | i-06aef3f6d3b08c30e | 2026-11-01 21:22:14 | ec2-52-87-175-234.compute-1.amazonaws.com | `screenshots/lab1_run2.jpg` | TODO |
 | 3 | 2026-11-01 | America/New_York | i-080c1288140029da3 | 2026-11-01 21:22:14 | ec2-54-81-94-77.compute-1.amazonaws.com | `screenshots/lab1_run3.jpg` | TODO |
 | 4 | 2026-11-02 | America/New_York | i-07a13735074905900 | 2026-11-01 23:08:13 | ec2-32-200-119-88.compute-1.amazonaws.com | `screenshots/lab1_run4.jpg` | TODO |
-| 5 | | America/New_York | | | | `screenshots/lab1_run5.jpg` | |
-| 6 | | America/New_York | | | | `screenshots/lab1_run6.jpg` | |
+| 5 | 2026-11-02 | America/New_York | i-0a90d322749389b41 | 2026-11-02 06:04:23 | ec2-3-80-195-226.compute-1.amazonaws.com | `screenshots/lab1_run5.jpg` | TODO |
+| 6 | 2026-11-02 | America/New_York | i-0577b13eec0179ee4 | 2026-11-02 06:04:23 | ec2-54-226-137-36.compute-1.amazonaws.com | `screenshots/lab1_run6.jpg` | TODO |
 | 7 | | America/New_York | | | | `screenshots/lab1_run7.jpg` | |
 
 ## Required deliverables

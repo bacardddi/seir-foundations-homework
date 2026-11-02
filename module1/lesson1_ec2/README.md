@@ -29,8 +29,8 @@
 | COBOL rc 4 | `screenshots/cobol_rc4.jpg` | No |
 | COBOL rc 8 | `screenshots/cobol_rc8.jpg` | No |
 | COBOL rc 12 | `screenshots/cobol_rc12.jpg` | No |
-| Ledger decode | `screenshots/cobol_ledger_decode.jpg` | No |
-| Clone own repo on EC2 | `screenshots/git_clone.jpg` | No |
+| Ledger decode | `screenshots/cobol_ledger_decode.jpg` | Yes |
+| Clone own repo on EC2 | `screenshots/git_clone.jpg` | Yes |
 | AI-enabled study | `AI_enabled_study_lab1.0.txt` | No |
 
 ## Extra credit evidence

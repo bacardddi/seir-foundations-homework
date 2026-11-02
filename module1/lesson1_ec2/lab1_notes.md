@@ -89,38 +89,64 @@ Account IDs: TODO
 Command: `./cobol/bin/account_lookup 100001`
 Output:
 ```
-TODO
+ACCOUNT=100001
+NAME=Alice Johnson
+STATUS=ACTIVE
+BALANCE=5000.00
+CURRENCY=USD
+$ echo $?
+0
 ```
-Meaning: TODO
+Meaning: 0 = success. The account was found and its details were printed.
 
 ### Return code 4 — account not found
 Command: `./cobol/bin/account_lookup 999999`
 Output:
 ```
-TODO
+ERROR=ACCOUNT NOT FOUND
+ACCOUNT=999999
+$ echo $?
+4
 ```
-Meaning: TODO
+Meaning: 4 = account not found. The program ran fine but there is no account 999999 in the ledger, and it did not crash.
 
 ### Return code 8 — business rejection
 Command: `./cobol/bin/payment_post TXN-BW-0001 100001 0.00 USD TEST-ZERO`
 Output:
 ```
-TODO
+TXN=TXN-BW-0001
+ACCOUNT=100001
+AMOUNT=0.00
+CURRENCY=USD
+STATUS=REJECTED
+REASON=AMOUNT MUST BE GREATER THAN ZERO
+$ echo $?
+8
 ```
-Command (amount bigger than balance): `TODO`
+Command (amount bigger than balance): `./cobol/bin/payment_post TXN-BW-0002 100001 99999999.00 USD TEST-BIG`
 Output:
 ```
-TODO
+TXN=TXN-BW-0002
+ACCOUNT=100001
+AMOUNT=99999999.00
+CURRENCY=USD
+STATUS=REJECTED
+REASON=INSUFFICIENT FUNDS
+$ echo $?
+8
 ```
-Meaning: TODO
+Meaning: 8 = business rejection. The request was understood, but a bank rule said no (zero amount, or not enough money in the account).
 
 ### Return code 12 — environment failure
 Command: `cd ~` then `/opt/balerica-bank/cobol/bin/account_lookup 100001`
 Output:
 ```
-TODO
+ERROR=CANNOT OPEN data/accounts.dat
+FILE-STATUS=35
+$ echo $?
+12
 ```
-Meaning: TODO
+Meaning: 12 = environment failure. I ran it from the wrong folder, so the program could not find `data/accounts.dat` (it uses a relative path). FILE-STATUS 35 is COBOL's "file not found" code.
 
 ### Bonus — payment to a non-ACTIVE account
 TODO

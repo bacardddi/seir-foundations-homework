@@ -25,10 +25,10 @@
 | Maarek Section 25 quiz | `screenshots/Maarek_Section25_quiz.jpg` | Yes |
 | AI runbook review | `ai_review_BakariWoods.txt` | No |
 | Spotter check-in | `spotter_BakariWoods.txt` | No |
-| COBOL rc 0 | `screenshots/cobol_rc0.jpg` | No |
-| COBOL rc 4 | `screenshots/cobol_rc4.jpg` | No |
-| COBOL rc 8 | `screenshots/cobol_rc8.jpg` | No |
-| COBOL rc 12 | `screenshots/cobol_rc12.jpg` | No |
+| COBOL rc 0 | `screenshots/cobol_rc0.jpg` | Yes |
+| COBOL rc 4 | `screenshots/cobol_rc4.jpg` | Yes |
+| COBOL rc 8 | `screenshots/cobol_rc8.jpg` | Yes |
+| COBOL rc 12 | `screenshots/cobol_rc12.jpg` | Yes |
 | Ledger decode | `screenshots/cobol_ledger_decode.jpg` | Yes |
 | Clone own repo on EC2 | `screenshots/git_clone.jpg` | Yes |
 | AI-enabled study | `AI_enabled_study_lab1.0.txt` | No |

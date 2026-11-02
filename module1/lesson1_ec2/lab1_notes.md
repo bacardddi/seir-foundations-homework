@@ -126,9 +126,13 @@ Meaning: TODO
 TODO
 
 ### Decoding Alice's balance by hand
-Raw 12 characters (columns 45–56): `TODO`
-Dollar amount: TODO
-Why there is no decimal point in the file: TODO
+Raw 12 characters (columns 45–56): `000000500000`
+Dollar amount: $5,000.00
+Why there is no decimal point in the file:
+
+- **The final two digits represent cents:** A number like `000000500000` is interpreted as $5,000.00, because the last two positions are always the cents portion.
+- **It was designed to conserve memory:** COBOL used this format because computer storage was extremely costly in 1959, so every saved byte mattered.
+- **The field always has a fixed length:** Since the width never changes, programs like `cut` can reliably extract the value based on its exact position in the record.
 
 ### My journal lines (`cat data/payments.dat`)
 ```

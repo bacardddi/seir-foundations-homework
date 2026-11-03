@@ -72,11 +72,11 @@ INFO:     Started server process [12263]
 Notes:
 This was my final run for Monday, so I made sure it served as the third and last lab‑run screenshot dated Nov 2, keeping me under the daily limit of three. I had already installed everything on the second instance while Run 5 was finishing, so I jumped straight to Step 4. Again, there were no errors, but my prompt still showed root instead of ec2-user, which I need to fix before Run 7. I also learned that each “Started server process” number (this time 12263) is a unique process ID, which proves that every run is a separate server instance.
 
-## Run 7 — i-TODO (date TODO)
+## Run 7 — i-0541cfa5be7ef05c4 (2026-11-03)
 
 Exact output line from this run:
 ```
-TODO
+INFO:     Started server process [12395]
 ```
 
 Notes:

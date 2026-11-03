@@ -13,7 +13,7 @@
 | 4 | 2026-11-02 | America/New_York | i-07a13735074905900 | 2026-11-01 23:08:13 | ec2-32-200-119-88.compute-1.amazonaws.com | `screenshots/lab1_run4.jpg` | Yes |
 | 5 | 2026-11-02 | America/New_York | i-0a90d322749389b41 | 2026-11-02 06:04:23 | ec2-3-80-195-226.compute-1.amazonaws.com | `screenshots/lab1_run5.jpg` | Yes |
 | 6 | 2026-11-02 | America/New_York | i-0577b13eec0179ee4 | 2026-11-02 06:04:23 | ec2-54-226-137-36.compute-1.amazonaws.com | `screenshots/lab1_run6.jpg` | Yes |
-| 7 | 2026-11-03 | America/New_York | i-0541cfa5be7ef05c4 | 2026-11-03 05:22:13 | ec2-54-196-211-63.compute-1.amazonaws.com | `screenshots/lab1_run7.jpg` | No |
+| 7 | 2026-11-03 | America/New_York | i-0541cfa5be7ef05c4 | 2026-11-03 05:22:13 | ec2-54-196-211-63.compute-1.amazonaws.com | `screenshots/lab1_run7.jpg` | Yes |
 
 ## Required deliverables
 

@@ -80,7 +80,9 @@ INFO:     Started server process [12395]
 ```
 
 Notes:
-- TODO
+On my last run, I finally felt like I understood the whole process. I did it just after midnight on Tuesday, so it became my only lab‑run screenshot for Nov 3. Everything worked with no errors. The commands are getting easier to do and understand — installing Git, cloning the repo, running the installer, moving into /opt/balerica-bank, activating the venv, running the ID line, and starting Uvicorn.
+
+But even though I meant to fix it, my prompt still showed root, which reminded me that I need to slow down at Step 0 and check for # vs $ before I start. That’s a habit I’m still learning.
 
 ---
 

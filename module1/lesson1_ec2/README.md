@@ -19,7 +19,7 @@
 
 | Item | File | Done? |
 |------|------|-------|
-| Personal notes | `lab1_notes.md` | No |
+| Personal notes | `lab1_notes.md` | Yes |
 | Maarek Section 21 quiz | `screenshots/Maarek_Section21_quiz.jpg` | Yes |
 | Maarek Section 23 quiz | `screenshots/Maarek_Section23_quiz.jpg` | Yes |
 | Maarek Section 25 quiz | `screenshots/Maarek_Section25_quiz.jpg` | Yes |

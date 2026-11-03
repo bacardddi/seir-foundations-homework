@@ -1,15 +1,25 @@
-Spotter = Ben Tucker
+Spotter = Richie Bias
 5 things my spotter learned while working on the lab / homework:
-1. TODO
-2. TODO
-3. TODO
-4. TODO
-5. TODO
+1. Take your time and verify before pressing "enter."
+2. Check with ChatGPT on what you don't understand.
+3. Know how to paste screenshots as an image to your repo.
+4. Homework is sometimes different from the homework suggested in class,
+   so verify.
+5. Talk with admin on any subject you do not fully comprehend.
 
-I am the spotter for = TODO
+I am the spotter for = Richie Bias
 5 things I learned that I shared with them:
-1. TODO
-2. TODO
-3. TODO
-4. TODO
-5. TODO
+1. Check your prompt before Step 0. If it ends in # and says root,
+   type exit to get back to ec2-user. I did all my runs as root by
+   mistake.
+2. Run the ID line (whoami, date, ec2-metadata -i, uptime -s) before
+   EVERY screenshot, not just the first one. I had to retake my
+   return-code screenshots because I forgot it.
+3. Only 3 lab-run screenshots per day, so plan the 7 runs across at
+   least 3 days. Leaving an instance running past midnight moves it
+   to the next day.
+4. Return code 12 with FILE-STATUS=35 means you ran the COBOL program
+   from the wrong folder. Run cd /opt/balerica-bank first.
+5. Rejected payments still get written to payments.dat, but the
+   balance doesn't change. Use a new TXN ID each time so you don't
+   get duplicates.

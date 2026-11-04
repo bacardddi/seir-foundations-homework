@@ -1,11 +1,16 @@
 === Topic 1: Databases ===
 Read:    AWS: What's the Difference Between Relational and Non-relational Databases? - https://aws.amazon.com/compare/the-difference-between-relational-and-non-relational-databases/
 Watched: IBM Technology: SQL vs. NoSQL - What's the difference? - https://www.youtube.com/watch?v=Q5aTUc7c4jg
-AI used: TODO
+AI used: Claude
 Prompt(s) I asked the AI:
-TODO
+1. Relational vs non-relational databases
+2. Why a bank would use PostgreSQL instead of SQLite
+3. Which AWS services are SQL and which are NoSQL
 One thing the AI said that I double-checked, and what I found:
-TODO
+One thing the AI said was that DynamoDB is a key-value NoSQL database. I
+wanted to make sure that was true, so I checked the AWS comparison article
+from the Read link. It said DynamoDB is a key-value / document database.
+That means the AI was right.
 
 Paragraph (minimum 5 sentences):
 A database is a structured system for storing and retrieving information so

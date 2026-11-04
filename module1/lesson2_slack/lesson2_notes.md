@@ -108,6 +108,20 @@ My prediction was right: only 1 of the 4 messages arrived, the CRITICAL one. CRI
 
 ## Experiment 2 — SLACK_ALERTS_ENABLED=false, run script 1
 
+```
+$ grep SLACK_ALERT .env
+SLACK_ALERTS_ENABLED=false
+SLACK_ALERT_SEVERITY=INFO
+SLACK_ALERT_CHANNEL=balerica-alerts
+$ python hw2_severity_tour.py
+INFO     -> skipped by your threshold
+WARNING  -> skipped by your threshold
+ERROR    -> skipped by your threshold
+CRITICAL -> skipped by your threshold
+```
+
+**Why a kill switch is useful during maintenance windows:**
+
 TODO
 
 ## Experiment 3 — lower the WARNING threshold in hw4_disk_watch.py

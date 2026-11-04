@@ -37,13 +37,16 @@ Numbers + sources:
 === Topic 2: COBOL ===
 Read:    Wikipedia: COBOL - https://en.wikipedia.org/wiki/COBOL
 Watched: Fireship: COBOL in 100 Seconds - https://www.youtube.com/watch?v=7d7-etf-wNI
-AI used: TODO
+AI used: Claude
 Prompt(s) I asked the AI:
 1. What is COBOL and why do banks still use it?
 2. What does PIC 9(10)V99 mean, and why is there no decimal point in the file?
 3. Why is it hard to replace COBOL systems?
 One thing the AI said that I double-checked, and what I found:
-TODO
+The AI said the V in PIC 9(10)V99 shows where the decimal point goes but the
+decimal is not stored in the file. I checked this in my own lab. Alice's
+balance in accounts.dat was 000000500000 with no dot, and account_lookup
+printed 5000.00. So the AI was right.
 
 Paragraph (minimum 5 sentences):
 When I worked through the lab, I finally started to understand why COBOL is

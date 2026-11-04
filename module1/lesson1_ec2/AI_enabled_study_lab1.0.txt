@@ -39,12 +39,22 @@ Read:    Wikipedia: COBOL - https://en.wikipedia.org/wiki/COBOL
 Watched: Fireship: COBOL in 100 Seconds - https://www.youtube.com/watch?v=7d7-etf-wNI
 AI used: TODO
 Prompt(s) I asked the AI:
-TODO
+1. What is COBOL and why do banks still use it?
+2. What does PIC 9(10)V99 mean, and why is there no decimal point in the file?
+3. Why is it hard to replace COBOL systems?
 One thing the AI said that I double-checked, and what I found:
 TODO
 
 Paragraph (minimum 5 sentences):
-TODO
+COBOL is an old programming language made for business work like banking
+and insurance. Banks still use it because their systems were built a long
+time ago, and the code still runs fast and reliably. PIC 9(10)V99 means the
+number has 10 digits for dollars and 2 digits for cents. The V shows where
+the decimal point goes, but the decimal is not stored in the file. That's
+why the file looks like a long number with no dot. COBOL systems are hard to
+replace because they are huge, old, and full of business rules that were
+added over many years. Changing them is risky and expensive, and not many
+people know COBOL anymore.
 
 Numbers + sources:
 - (number) - (source, year)

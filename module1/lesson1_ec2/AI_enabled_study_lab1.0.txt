@@ -110,12 +110,28 @@ Read:    MDN: An overview of HTTP - https://developer.mozilla.org/en-US/docs/Web
 Watched: IBM Technology: What is a REST API? - https://www.youtube.com/watch?v=lsMQRaeKNDk
 AI used: TODO
 Prompt(s) I asked the AI:
-TODO
+1. What is an API and what is REST?
+2. What is the difference between GET and POST?
+3. What do HTTP status codes like 200, 404 and 500 mean?
 One thing the AI said that I double-checked, and what I found:
 TODO
 
 Paragraph (minimum 5 sentences):
-TODO
+I asked the AI some questions about APIs, REST, GET vs POST, and HTTP status
+codes. I learned that an API is just a set of rules that lets one program
+talk to another. Most web APIs today use REST, which means you send HTTP
+requests to URLs (endpoints) and get back data, usually in JSON.
+
+GET is used to read data, and POST is used to send new data. In the
+Balerica lab, the FastAPI server had endpoints like GET /status,
+GET /accounts/{id}, and POST /payments, and I could test them all on the
+/docs page.
+
+The part that stood out to me is how the API sits on top of the old COBOL
+programs. When I call GET /accounts/100001, FastAPI actually runs
+account_lookup behind the scenes and turns its return code into an HTTP
+status. So a COBOL return code 4 (not found) becomes a 404. That's how banks
+give old mainframe systems a modern interface.
 
 Numbers + sources:
 - (number) - (source, year)

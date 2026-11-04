@@ -148,12 +148,31 @@ Read:    US GAO (2025): Agencies Need to Plan for Modernizing Critical Decades-O
 Watched: Modernizing COBOL: From Mainframe to API - https://www.youtube.com/watch?v=-CI8hb-077E
 AI used: TODO
 Prompt(s) I asked the AI:
-TODO
+1. How do COBOL, databases, APIs and SWIFT work together inside a bank?
+2. Why do banks wrap old COBOL systems with APIs instead of rewriting them?
+3. What did the 2025 GAO report say about old government legacy systems?
 One thing the AI said that I double-checked, and what I found:
 TODO
 
 Paragraph (minimum 5 sentences):
-TODO
+This part helped me see how everything in the lab fits together. A real
+bank uses all four pieces at the same time: COBOL, databases, APIs, and
+SWIFT. The COBOL programs are the core. They do the money math and enforce
+the business rules, like rejecting a $0 payment with return code 8. The
+database is where the accounts and payment attempts are stored. In the
+Balerica lab it was fixed-width files and SQLite, but in a real bank it
+would be a mainframe database.
+
+The API layer (FastAPI in our lab) gives the old COBOL code a modern front
+door. Instead of running a COBOL program directly, a mobile app or website
+can call something like GET /accounts/100001. SWIFT sits at the edge of the
+bank. It carries messages to other banks when money has to cross borders.
+
+The GAO report showed this isn't just a bank problem. The U.S. government
+also runs very old systems, and many agencies don't have full modernization
+plans. After doing seven lab runs, I understand why modernizing these
+systems is slow. You have to keep the old core running safely while you
+build new layers around it.
 
 Numbers + sources:
 - (number) - (source, year)

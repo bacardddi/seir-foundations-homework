@@ -28,6 +28,14 @@ All four alert levels showed up: INFO, WARNING, ERROR, and CRITICAL. This happen
 
 The script only skips alerts that are below the threshold. Since nothing is below INFO, everything went through. If the threshold were ERROR, which is the default in the class, then only ERROR and CRITICAL alerts would show up.
 
+Later my threshold was set to ERROR and I ran script 2 again, which proved it:
+```
+INFO     -> skipped by your threshold
+WARNING  -> skipped by your threshold
+ERROR    -> DELIVERED to Slack
+CRITICAL -> DELIVERED to Slack
+```
+
 ## Script 3 — hw3_server_time.py
 
 Output:

@@ -64,7 +64,9 @@ shows up as 000000500000, the last two digits are the cents. It felt strange
 at first, but now I understand why banks do it — it keeps the math exact.
 
 Numbers + sources:
-- (number) - (source, year)
+- COBOL was created in 1959 - Wikipedia: COBOL
+- About 95% of ATM swipes rely on COBOL - Reuters, 2017
+- About 220 billion lines of COBOL are still in use - Reuters, 2017
 
 === Topic 3: SWIFT ===
 Read:    Wikipedia: SWIFT - https://en.wikipedia.org/wiki/SWIFT

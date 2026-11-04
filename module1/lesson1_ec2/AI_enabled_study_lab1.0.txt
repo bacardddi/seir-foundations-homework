@@ -146,13 +146,16 @@ Numbers + sources:
 === Topic 5: Where COBOL, SWIFT, APIs, and databases meet ===
 Read:    US GAO (2025): Agencies Need to Plan for Modernizing Critical Decades-Old Legacy Systems - https://files.gao.gov/reports/GAO-25-107795/index.html
 Watched: Modernizing COBOL: From Mainframe to API - https://www.youtube.com/watch?v=-CI8hb-077E
-AI used: TODO
+AI used: Claude
 Prompt(s) I asked the AI:
 1. How do COBOL, databases, APIs and SWIFT work together inside a bank?
 2. Why do banks wrap old COBOL systems with APIs instead of rewriting them?
 3. What did the 2025 GAO report say about old government legacy systems?
 One thing the AI said that I double-checked, and what I found:
-TODO
+The AI said most agencies didn't have full modernization plans for their
+oldest systems. I looked at the GAO report myself, and the heading says
+"GAO Identified 11 Critical Legacy Systems; Most Agencies Lacked Complete
+Modernization Plans." So the AI was right.
 
 Paragraph (minimum 5 sentences):
 This part helped me see how everything in the lab fits together. A real
@@ -175,4 +178,6 @@ systems is slow. You have to keep the old core running safely while you
 build new layers around it.
 
 Numbers + sources:
-- (number) - (source, year)
+- GAO reviewed 69 federal legacy IT systems and found the 11 most in need of modernization, run by 10 agencies - GAO-25-107795, 2025
+- The federal government spends more than $100 billion a year on IT, and about 80% goes to operating and maintaining existing systems - GAO-25-107795, 2025
+- Of the 10 critical systems GAO identified in 2019, only 3 had been modernized as of February 2025 - GAO-25-107795, 2025

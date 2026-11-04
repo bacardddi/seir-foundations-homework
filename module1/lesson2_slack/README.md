@@ -18,8 +18,8 @@
 |---|--------|------|
 | 1 | `hw1_hello_slack.py` | Yes |
 | 2 | `hw2_severity_tour.py` | Yes |
-| 3 | `hw3_server_time.py` | No |
-| 4 | `hw4_disk_watch.py` | No |
-| 5 | `hw5_load_check.py` | No |
-| 6 | `hw6_incident_drill.py` | No |
+| 3 | `hw3_server_time.py` | Yes |
+| 4 | `hw4_disk_watch.py` | Yes |
+| 5 | `hw5_load_check.py` | Yes |
+| 6 | `hw6_incident_drill.py` | Yes |
 | 7 | `hw7_morning_report.py` | Yes |

@@ -8,7 +8,21 @@ One thing the AI said that I double-checked, and what I found:
 TODO
 
 Paragraph (minimum 5 sentences):
-TODO
+A database is a structured system for storing and retrieving information so
+applications can reliably save data, search through it, and update it without
+losing integrity — which is why everything from banking systems to social
+networks depends on one. Relational databases organize information into fixed
+tables made of rows and columns, while non-relational databases use flexible
+formats like key-value pairs, documents, or graphs that scale more easily
+across distributed servers. In AWS, relational engines are provided through
+Amazon RDS and Aurora, whereas DynamoDB serves as the main NoSQL key-value
+option. PostgreSQL is widely trusted because it's open source, stable, and
+feature-rich, though it can require more tuning and operational expertise
+compared to a fully managed NoSQL service. Balerica uses SQLite in the
+teaching lab because it's just a single file with no server to configure,
+which keeps the exercises simple. A real bank, however, needs a system
+designed for heavy concurrency, strict security, backups, and high
+availability — requirements that SQLite isn't built to handle.
 
 Numbers + sources:
 - (number) - (source, year)

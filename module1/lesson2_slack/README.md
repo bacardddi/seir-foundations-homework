@@ -10,7 +10,7 @@
 | `#balerica-alerts` showing 5+ different homework alerts | `screenshots/slack_alerts.jpg` | Yes |
 | Terminal running `hw7_morning_report.py` with the ID line | `screenshots/hw7_morning_report.jpg` | Yes |
 | Notes: answers to each script's "In your notes" question | `lesson2_notes.md` | Yes |
-| Notes: experiment 1 prediction vs result | `lesson2_notes.md` | No |
+| Notes: experiment 1 prediction vs result | `lesson2_notes.md` | Yes |
 
 ## Scripts run
 

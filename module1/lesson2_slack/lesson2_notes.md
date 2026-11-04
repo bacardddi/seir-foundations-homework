@@ -94,7 +94,17 @@ Screenshot: `screenshots/hw7_morning_report.jpg`
 
 **My prediction (before running):** With CRITICAL as the threshold, only the CRITICAL alert should get through.
 
-**Actual result:** TODO
+**Actual result:**
+```
+$ grep SEVERITY .env
+SLACK_ALERT_SEVERITY=CRITICAL
+$ python hw2_severity_tour.py
+INFO     -> skipped by your threshold
+WARNING  -> skipped by your threshold
+ERROR    -> skipped by your threshold
+CRITICAL -> DELIVERED to Slack
+```
+My prediction was right: only 1 of the 4 messages arrived, the CRITICAL one. CRITICAL is the highest level (3), so INFO, WARNING and ERROR were all below the threshold and skipped.
 
 ## Experiment 2 — SLACK_ALERTS_ENABLED=false, run script 1
 

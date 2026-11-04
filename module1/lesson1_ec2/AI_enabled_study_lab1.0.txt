@@ -71,13 +71,16 @@ Numbers + sources:
 === Topic 3: SWIFT ===
 Read:    Wikipedia: SWIFT - https://en.wikipedia.org/wiki/SWIFT
 Watched: a16z: Foreign Exchange 101 - What Happens When You Send Money Abroad? - https://www.youtube.com/watch?v=eoXdyO9oGJc
-AI used: TODO
+AI used: Claude
 Prompt(s) I asked the AI:
 1. What is SWIFT and does it actually move money?
 2. What happens step by step when I send money to another country?
 3. What is a SWIFT/BIC code and what is ISO 20022?
 One thing the AI said that I double-checked, and what I found:
-TODO
+The AI said SWIFT doesn't move money, it only sends messages between banks.
+I looked at the Wikipedia page for SWIFT, and it says SWIFT does not hold
+funds or manage accounts — it only provides the messaging network. So the
+AI was right.
 
 Paragraph (minimum 5 sentences):
 I asked the AI some questions about SWIFT and how international money

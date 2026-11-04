@@ -45,7 +45,7 @@ Time check from EC2: it is Wednesday November 04, 2026 at 22:42:44 UTC here. Ser
 
 **Question: how many hours apart are server time and YOUR wall clock?**
 
-TODO
+The server showed 22:42 UTC when my own clock said 5:42 PM Eastern. That means the times were 5 hours apart. Daylight saving time ended on Nov 1, so Eastern time is now UTC−5. Servers use UTC so logs from different time zones all line up, and the time doesn't jump when daylight saving changes.
 
 ## Script 4 — hw4_disk_watch.py
 
@@ -57,7 +57,7 @@ Disk check on / : 25.4% used, 5.9 GB free. Severity chosen by MY code.
 
 **Question: why is a quiet INFO here GOOD design, not a failure?**
 
-TODO
+My disk was only 25.4% full, which is healthy. So the script correctly sent an INFO alert instead of WARNING or CRITICAL. A good monitor only gets loud when something is actually wrong. If every check sent a big alert, people would start ignoring them — that's called alert fatigue. A quiet INFO just shows the check worked and everything is fine.
 
 ## Script 5 — hw5_load_check.py
 
@@ -69,7 +69,7 @@ Load average: 0.00 (1m), 0.00 (5m), 0.00 (15m) on 1 CPU(s).
 
 **Question: what would make this number spike on the Balerica bank?**
 
-TODO
+My load average was 0.00 because nothing was running. It would spike if lots of customers hit the API at the same time (like payday), if a big COBOL batch job was running, or if something got stuck in a loop. Since the server only has 1 CPU, a load above 1.0 means jobs are waiting.
 
 ## Script 6 — hw6_incident_drill.py
 
@@ -82,7 +82,7 @@ Incident: DRILL-3510
 
 **Question: which of these fake incidents deserves to wake a human at 3 AM?**
 
-TODO
+The /payments endpoint returning 500 errors should wake someone, because customers can't make payments and the bank is losing money and trust. A batch job running 12 minutes long is just a WARNING and can wait until morning. Only problems that hurt customers or money right now should wake a human at night.
 
 ## Script 7 — hw7_morning_report.py
 

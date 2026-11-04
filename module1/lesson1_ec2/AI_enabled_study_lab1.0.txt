@@ -46,15 +46,19 @@ One thing the AI said that I double-checked, and what I found:
 TODO
 
 Paragraph (minimum 5 sentences):
-COBOL is an old programming language made for business work like banking
-and insurance. Banks still use it because their systems were built a long
-time ago, and the code still runs fast and reliably. PIC 9(10)V99 means the
-number has 10 digits for dollars and 2 digits for cents. The V shows where
-the decimal point goes, but the decimal is not stored in the file. That's
-why the file looks like a long number with no dot. COBOL systems are hard to
-replace because they are huge, old, and full of business rules that were
-added over many years. Changing them is risky and expensive, and not many
-people know COBOL anymore.
+When I worked through the lab, I finally started to understand why COBOL is
+still such a big deal in banking. COBOL was created back in 1959, and it was
+meant to read almost like English so business people could follow the logic.
+In the Balerica lab, I actually saw this myself. The account_lookup and
+payment_post programs are written in COBOL, and they use the same
+return-code style that real mainframes use: 0 for success, 4 for not found,
+8 for a business rule rejection, and 12 for an environment problem. Seeing
+those codes show up in my runs made the system feel a lot more "real."
+
+I also learned how COBOL stores money. The ledger uses a PIC 9(10)V99 field,
+which means the decimal point isn't actually stored. So when Alice's balance
+shows up as 000000500000, the last two digits are the cents. It felt strange
+at first, but now I understand why banks do it — it keeps the math exact.
 
 Numbers + sources:
 - (number) - (source, year)

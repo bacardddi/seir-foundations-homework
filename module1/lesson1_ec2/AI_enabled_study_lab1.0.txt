@@ -131,10 +131,14 @@ The part that stood out to me is how the API sits on top of the old COBOL
 programs. When I call GET /accounts/100001, FastAPI actually runs
 account_lookup behind the scenes and turns its return code into an HTTP
 status. So a COBOL return code 4 (not found) becomes a 404. That's how banks
-give old mainframe systems a modern interface.
+give old mainframe systems a modern interface. Seeing how the API layer
+works made the lab feel more real to me, because it showed how modern
+systems and old COBOL programs can work together.
 
 Numbers + sources:
-- (number) - (source, year)
+- HTTP was created by Tim Berners-Lee starting in 1989 - Wikipedia: HTTP
+- REST was defined by Roy Fielding in 2000 - Wikipedia: REST
+- HTTP status codes are grouped into five classes, from 1xx to 5xx - MDN: HTTP response status codes
 
 === Topic 5: Where COBOL, SWIFT, APIs, and databases meet ===
 Read:    US GAO (2025): Agencies Need to Plan for Modernizing Critical Decades-Old Legacy Systems - https://files.gao.gov/reports/GAO-25-107795/index.html

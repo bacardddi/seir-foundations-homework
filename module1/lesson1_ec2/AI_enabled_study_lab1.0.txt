@@ -25,7 +25,9 @@ designed for heavy concurrency, strict security, backups, and high
 availability — requirements that SQLite isn't built to handle.
 
 Numbers + sources:
-- (number) - (source, year)
+- Relational model introduced in 1970 - E. F. Codd, "A Relational Model of Data for Large Shared Data Banks", 1970
+- PostgreSQL is the most used database among professional developers - Stack Overflow Developer Survey, 2024
+- Amazon DynamoDB launched in 2012 - AWS announcement, 2012
 
 === Topic 2: COBOL ===
 Read:    Wikipedia: COBOL - https://en.wikipedia.org/wiki/COBOL

@@ -138,7 +138,11 @@ Disk is 25.4% used -> severity WARNING.
 Delivered!
 ```
 
-**Did the severity change?** TODO
+**Did the severity change?**
+
+Yes, the severity changed from INFO to WARNING. The disk didn't change at all — it was 25.4% used both times. What changed was the rule in the code. Before, the WARNING line was `elif percent_used >= 75`, and 25.4 is less than 75, so the script picked INFO. After I changed it to `>= 20`, 25.4 is more than 20, so that line became true and the script picked WARNING.
+
+This showed me that a person chooses the alert thresholds, and they decide when an alert should fire. If you set the threshold too low, you get false alarms for a disk that is actually healthy.
 
 ## Experiment 4 — put everything back
 

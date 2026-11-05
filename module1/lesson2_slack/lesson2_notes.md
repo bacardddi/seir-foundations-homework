@@ -122,7 +122,9 @@ CRITICAL -> skipped by your threshold
 
 **Why a kill switch is useful during maintenance windows:**
 
-TODO
+When `SLACK_ALERTS_ENABLED=false`, nothing gets sent to Slack, not even CRITICAL alerts. The script still runs, but `send_alert()` stops right away. This is helpful during a maintenance window, which is a planned time when engineers restart servers, install updates, or move databases. During maintenance, things are supposed to look broken for a few minutes, so without a kill switch the Slack channel would fill with false alarms and maybe wake people up for no reason.
+
+Turning alerts off with one setting in `.env` is safer than editing or deleting code. When maintenance is done, you just set the value back to true, and monitoring starts again without touching any scripts.
 
 ## Experiment 3 — lower the WARNING threshold in hw4_disk_watch.py
 

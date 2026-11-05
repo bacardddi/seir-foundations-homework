@@ -128,7 +128,17 @@ Turning alerts off with one setting in `.env` is safer than editing or deleting 
 
 ## Experiment 3 — lower the WARNING threshold in hw4_disk_watch.py
 
-TODO
+My disk was 25.4% used, so I changed the WARNING line from 75 to 20 in nano:
+```
+$ grep -n "percent_used >=" hw4_disk_watch.py
+16:if percent_used >= 90:
+18:elif percent_used >= 20:
+$ python hw4_disk_watch.py
+Disk is 25.4% used -> severity WARNING.
+Delivered!
+```
+
+**Did the severity change?** TODO
 
 ## Experiment 4 — put everything back
 

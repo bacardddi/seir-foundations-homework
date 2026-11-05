@@ -142,4 +142,16 @@ Delivered!
 
 ## Experiment 4 — put everything back
 
-TODO
+I changed the disk WARNING line back to 75 and checked that alerts are on with the INFO threshold. Then I reran script 4, and it was back to a quiet INFO:
+```
+$ grep -n "percent_used >=" hw4_disk_watch.py
+16:if percent_used >= 90:
+18:elif percent_used >= 75:
+$ grep SLACK_ALERT .env
+SLACK_ALERTS_ENABLED=true
+SLACK_ALERT_SEVERITY=INFO
+SLACK_ALERT_CHANNEL=balerica-alerts
+$ python hw4_disk_watch.py
+Disk is 25.4% used -> severity INFO.
+Delivered!
+```
